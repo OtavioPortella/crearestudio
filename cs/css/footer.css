@@ -1,0 +1,22 @@
+.footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  background-color: maroon;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.footer h3 {
+  color: #fbb03b;
+  font-family: nunito;
+}
+
+.registrada {
+  color: #fbb03b;
+  position: relative;
+  bottom: -10px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}

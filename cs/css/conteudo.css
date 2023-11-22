@@ -1,0 +1,13 @@
+.conteudo {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+}
+
+.conteudo img {
+  margin-top: 50px;
+  max-width: 500px;
+  max-height: 500px;
+  align-items: center;
+}
