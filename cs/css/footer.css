@@ -1,11 +1,10 @@
 .footer {
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  background-color: maroon;
-  width: 100%;
-  height: auto;
+  background-color: #64350d;
   text-align: center;
+  padding: 34px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .footer h3 {
@@ -15,8 +14,5 @@
 
 .registrada {
   color: #fbb03b;
-  position: relative;
-  bottom: -10px;
-  text-align: center;
   font-family: "Courier New", Courier, monospace;
 }

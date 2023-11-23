@@ -1,14 +1,13 @@
 .header {
   background-color: #64350d;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
-  top: 0px;
-  left: 0px;
-  position: fixed;
-  height: 65px;
-  text-decoration: none;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-menu {
