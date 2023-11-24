@@ -1,5 +1,5 @@
 .footer {
-  background-color: #64350d;
+  background-color: var(--secondary-color);
   text-align: center;
   padding: 34px 0px;
   display: flex;
@@ -8,11 +8,11 @@
 }
 
 .footer h3 {
-  color: #fbb03b;
+  color: var(--thirdy-color);
   font-family: nunito;
 }
 
 .registrada {
-  color: #fbb03b;
+  color: var(--thirdy-color);
   font-family: "Courier New", Courier, monospace;
 }

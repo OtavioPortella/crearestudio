@@ -27,13 +27,14 @@
   text-decoration: none;
   display: block;
 }
+
 li {
   list-style: none;
 }
 
 .logo {
   align-items: center;
-  max-width:  100px;
+  max-width: 100px;
   padding: 10px;
 
 }
