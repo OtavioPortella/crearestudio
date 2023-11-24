@@ -12,13 +12,29 @@
 
 .texto-conteudo {
   margin-left: 30px;
+
 }
 
 .texto-conteudo h1 {
+  font-weight: 300;
+  font-family: nilland;
   text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  
+}
+
+.texto-conteudo h2 {
+  font-family: nilland;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  
 }
 
 .texto-conteudo p {
   text-align: justify;
+  font-family: nunito;
+  margin: 40px 40px;
 }
 
