@@ -38,7 +38,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	background: var(--primary-color);
 	line-height: 1;
-  min-height: 100vh;
+  	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 }
@@ -70,4 +70,8 @@ table {
 	display: flex;
 	flex-direction: column;
 
+}
+
+html{
+	scroll-behavior: smooth;
 }

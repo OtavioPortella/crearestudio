@@ -19,12 +19,19 @@
   font-weight: 300;
   font-family: nilland;
   text-align: center;
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
   
 }
 
 .texto-conteudo h2 {
+  font-family: nilland;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  
+}
+
+.texto-conteudo h3 {
   font-family: nilland;
   font-size: 2rem;
   margin-bottom: 20px;
@@ -38,7 +45,7 @@
 
 }
 
-.servicos-img{
+.servicos-img {
   max-width: 200px;
   max-height: 300px;
 }
@@ -52,7 +59,7 @@
   
 }
 
-.titulo{
+.titulo {
   font-size: 3.8rem;
   font-family: nilland;
   margin-bottom: 55px;

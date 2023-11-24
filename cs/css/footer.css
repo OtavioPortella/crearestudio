@@ -8,11 +8,35 @@
 }
 
 .footer h3 {
+  text-align: left;
   color: var(--thirdy-color);
   font-family: nunito;
 }
 
 .registrada {
-  color: var(--thirdy-color);
-  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-registrada {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.footer-logo{
+  display: flex;
+}
+
+.divider {
+  height: 2px;
+  border-radius: 4px;
+  background-color: var(--thirdy-color);
+}
+
+.social-media{
+  display: flex;
+  gap: 20px;
 }
