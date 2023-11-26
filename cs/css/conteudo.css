@@ -54,9 +54,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
-
-  
+  gap: 50px;  
 }
 
 .titulo {
@@ -65,3 +63,56 @@
   margin-bottom: 55px;
 }
 
+
+.text-about{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ padding: 10px;
+}
+
+.text-about h1 {
+  font-weight: 300;
+  font-family: nilland;
+  font-size: 50px;
+  padding: 20PX;
+}
+
+.text-about h2 {
+  font-family: nilland;
+  font-size: 40px;
+  margin-bottom: 10px;
+  
+}
+
+.text-about h3 {
+  font-family: nilland;
+  font-size: 35px;
+
+  
+}
+
+.text-about p {
+  font-size: 25px;
+  font-family: nunito;
+  margin-bottom: 20px;
+}
+
+.conteudo-about {
+  display: flex;
+  align-items: center;
+}
+
+.conteudo-about img{
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+span{
+  max-width: 1000px;
+  font-size: 20px;
+  font-family: nunito;
+  display: flex;
+  text-align: center;
+  padding: 16px;
+}
