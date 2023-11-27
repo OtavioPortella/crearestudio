@@ -72,14 +72,15 @@
 }
 
 .text-about h1 {
-  font-weight: 300;
+  font-weight: bold;
   font-family: nilland;
   font-size: 50px;
   padding: 20PX;
 }
 
 .text-about h2 {
-  font-family: nilland;
+  font-weight: SmallCaps;
+  font-family: Nilland;
   font-size: 40px;
   margin-bottom: 10px;
   

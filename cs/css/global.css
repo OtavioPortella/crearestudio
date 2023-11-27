@@ -75,3 +75,21 @@ table {
 html{
 	scroll-behavior: smooth;
 }
+
+@font-face {
+    font-family: 'Nilland';
+	src: url('./font/Nilland.ttf');
+	font-weight: 400;	
+}
+
+@font-face {
+    font-family: 'Nilland';
+	src: url('./font/Nilland-Black.ttf');
+	font-weight: 900;	
+}
+
+@font-face {
+    font-family: 'Nilland';
+	src: url('./font/Nilland-Bold.ttf');
+	font-weight: 700;	
+}
