@@ -123,6 +123,7 @@ main span{
 .formulario label{
   font-family: nilland;
   font-size: 35px;
+  color: var(--secondary-color);
 }
 
 .formulario input{
@@ -132,6 +133,8 @@ main span{
   border: none;
   border-bottom: 1px solid var(--secondary-color);
   border-right: 1px solid var(--secondary-color);
+  box-shadow: 3px 3px 2px var(--secondary-color);
+  outline-color: var(--secondary-color);
 }
 
 .formulario input::placeholder {
@@ -143,8 +146,10 @@ main span{
   border-radius: 4px;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
   border-right: 1px solid var(--secondary-color);
+  box-shadow: 5px 5px 5px var(--secondary-color);
+  outline-color: var(--secondary-color);
 }
 
 .formulario textarea::placeholder {
@@ -156,6 +161,7 @@ main span{
   font-size: 50px;
   font-weight: 600;
   margin: 20px;
+  color: var(--secondary-color);
 }
 
 .form-row{
@@ -163,6 +169,10 @@ main span{
   width: 100%;
   justify-content: space-between;
   padding: 15px;
+}
+
+.form-row input:focus {
+  border-bottom-color: var(--secondary-color);
 }
 
 @media (max-width: 1020px) {
@@ -214,4 +224,21 @@ main span{
   }
 
 
+}
+
+.btn-enviar{
+  align-self: flex-end;
+  margin-top: 20px;
+  padding: 8px 12px;
+  background-color: transparent;
+  border-radius: 4px;
+  color: var(--secondary-color);
+  font-family: nunito;
+  border: 1px solid var(--secondary-color);
+  transition: background .25s;
+}
+
+.btn-enviar:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }

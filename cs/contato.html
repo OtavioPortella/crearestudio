@@ -5,6 +5,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script>
+        function enviarParaGoogleForms() {
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+
+            // Substitua 'YOUR_FORM_ID' pelo ID do seu formulário do Google Forms
+            var formId = '1FAIpQLSeT39s9kWF0v8YEZ2oJCZr5EQVC65QGL-xznftf21zluEj4RA';
+            var apiUrl = 'https://docs.google.com/forms/d/e/' + formId + '/formResponse';
+
+            // Construa a URL com os parâmetros do formulário
+            var url = apiUrl + '?entry.123=' + nome + '&entry.456=' + email;
+
+            // Crie uma nova janela para abrir a URL e enviar os dados
+            window.open(url);
+
+            // Você também pode usar XMLHttpRequest para enviar dados sem abrir uma nova janela
+            // Certifique-se de lidar com CORS se o seu formulário estiver em um domínio diferente
+        }
+    </script>
     <title>Creare Studio</title>
 </head>
 
@@ -26,18 +45,21 @@
         <h1 class="titulo-contato">Contato</h1>
         <form class="formulario">
             <div class="form-row">
-              <label for="nome">Nome:</label>
-              <input placeholder="Escreva seu nome" type="text" id="nome" />
+                <label for="email">E-mail:</label>
+                <input placeholder="Escreva seu e-mail" type="email" id="email" />
             </div>
             <div class="form-row">
-              <label for="email">E-mail:</label>
-              <input placeholder="Escreva seu e-mail" type="email" id="email" />
+                <label for="nome">Nome:</label>
+                <input placeholder="Escreva seu nome" type="text" id="nome" />
             </div>
             <div class="form-row">
-              <label for="msg">Mensagem:</label>
-              <textarea placeholder="Escreva sua menssagem" rows="10" id="msg"></textarea>
+                <label for="msg">Mensagem:</label>
+                <textarea placeholder="Escreva sua menssagem" rows="10" id="msg"></textarea>
             </div>
-          </form>
+            <button class="btn-enviar" type="submit">
+                Enviar
+            </button>
+        </form>
     </main>
     <footer class="footer">
         <nav class="container">
@@ -85,21 +107,24 @@
                 <h3>Araçatuba-SP</h3>
             </div>
             <div class="social-media">
-                <a target="_blank" href="https://www.linkedin.com/in/create-studio-a17a622a1/"><svg xmlns="http://www.w3.org/2000/svg" width="30.137" height="30.137" viewBox="0 0 30.137 30.137">
-                    <path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in"
-                        d="M6.746,30.137H.5V10.017H6.746ZM3.618,7.272A3.636,3.636,0,1,1,7.237,3.619,3.649,3.649,0,0,1,3.618,7.272ZM30.13,30.137H23.9V20.343c0-2.334-.047-5.328-3.248-5.328-3.248,0-3.746,2.536-3.746,5.16v9.963H10.659V10.017h5.992v2.745h.087a6.565,6.565,0,0,1,5.912-3.249c6.323,0,7.486,4.164,7.486,9.573V30.137Z"
-                        transform="translate(0 -0.001)" fill="#f9b03c" />
-                </svg></a>
-                <a target="_blank" href="https://www.facebook.com/profile.php?id=100065417772312"><svg xmlns="http://www.w3.org/2000/svg" width="16.141" height="30.137" viewBox="0 0 16.141 30.137">
-                    <path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f"
-                        d="M16.692,16.952l.837-5.454H12.3V7.959a2.727,2.727,0,0,1,3.075-2.947H17.75V.368A29.013,29.013,0,0,0,13.527,0C9.217,0,6.4,2.612,6.4,7.341V11.5H1.609v5.454H6.4V30.137h5.9V16.952Z"
-                        transform="translate(-1.609)" fill="#f9b03c" />
-                </svg></a>
-                <a target="_blank" href="https://www.instagram.com/crearestudio_/"><svg xmlns="http://www.w3.org/2000/svg" width="30.137" height="30.137" viewBox="0 0 30.137 30.137">
-                    <path id="Icon_simple-instagram" data-name="Icon simple-instagram"
-                        d="M15.068,0c-4.094,0-4.6.019-6.212.09A11.111,11.111,0,0,0,5.2.791a7.379,7.379,0,0,0-2.67,1.738A7.352,7.352,0,0,0,.791,5.2a11.079,11.079,0,0,0-.7,3.658C.015,10.464,0,10.975,0,15.068s.019,4.6.09,6.212a11.118,11.118,0,0,0,.7,3.658,7.39,7.39,0,0,0,1.738,2.67A7.369,7.369,0,0,0,5.2,29.346a11.125,11.125,0,0,0,3.658.7c1.607.075,2.118.09,6.212.09s4.6-.019,6.212-.09a11.151,11.151,0,0,0,3.658-.7,7.7,7.7,0,0,0,4.407-4.407,11.118,11.118,0,0,0,.7-3.658c.075-1.607.09-2.118.09-6.212s-.019-4.6-.09-6.212a11.144,11.144,0,0,0-.7-3.658,7.4,7.4,0,0,0-1.738-2.67A7.342,7.342,0,0,0,24.938.791,11.085,11.085,0,0,0,21.28.09C19.673.015,19.162,0,15.068,0Zm0,2.712c4.022,0,4.5.02,6.09.089a8.3,8.3,0,0,1,2.8.521,4.959,4.959,0,0,1,2.86,2.859,8.32,8.32,0,0,1,.519,2.8c.072,1.59.088,2.067.088,6.09s-.019,4.5-.093,6.09a8.48,8.48,0,0,1-.529,2.8,4.784,4.784,0,0,1-1.129,1.735,4.7,4.7,0,0,1-1.733,1.125,8.381,8.381,0,0,1-2.806.519c-1.6.072-2.071.088-6.1.088s-4.5-.019-6.1-.093A8.544,8.544,0,0,1,6.121,26.8,4.666,4.666,0,0,1,4.39,25.671a4.575,4.575,0,0,1-1.13-1.733,8.551,8.551,0,0,1-.527-2.806c-.057-1.582-.077-2.071-.077-6.083s.02-4.5.077-6.1A8.542,8.542,0,0,1,3.26,6.14,4.467,4.467,0,0,1,4.39,4.406,4.457,4.457,0,0,1,6.121,3.279,8.34,8.34,0,0,1,8.91,2.75c1.6-.057,2.072-.075,6.1-.075l.057.038Zm0,4.618a7.738,7.738,0,1,0,7.738,7.738A7.737,7.737,0,0,0,15.068,7.331Zm0,12.76a5.023,5.023,0,1,1,5.023-5.023A5.021,5.021,0,0,1,15.068,20.091ZM24.92,7.026a1.808,1.808,0,1,1-1.808-1.807A1.809,1.809,0,0,1,24.92,7.026Z"
-                        fill="#f9b03c" />
-                </svg></a>
+                <a target="_blank" href="https://www.linkedin.com/in/create-studio-a17a622a1/"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="30.137" height="30.137" viewBox="0 0 30.137 30.137">
+                        <path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in"
+                            d="M6.746,30.137H.5V10.017H6.746ZM3.618,7.272A3.636,3.636,0,1,1,7.237,3.619,3.649,3.649,0,0,1,3.618,7.272ZM30.13,30.137H23.9V20.343c0-2.334-.047-5.328-3.248-5.328-3.248,0-3.746,2.536-3.746,5.16v9.963H10.659V10.017h5.992v2.745h.087a6.565,6.565,0,0,1,5.912-3.249c6.323,0,7.486,4.164,7.486,9.573V30.137Z"
+                            transform="translate(0 -0.001)" fill="#f9b03c" />
+                    </svg></a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100065417772312"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16.141" height="30.137" viewBox="0 0 16.141 30.137">
+                        <path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f"
+                            d="M16.692,16.952l.837-5.454H12.3V7.959a2.727,2.727,0,0,1,3.075-2.947H17.75V.368A29.013,29.013,0,0,0,13.527,0C9.217,0,6.4,2.612,6.4,7.341V11.5H1.609v5.454H6.4V30.137h5.9V16.952Z"
+                            transform="translate(-1.609)" fill="#f9b03c" />
+                    </svg></a>
+                <a target="_blank" href="https://www.instagram.com/crearestudio_/"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="30.137" height="30.137" viewBox="0 0 30.137 30.137">
+                        <path id="Icon_simple-instagram" data-name="Icon simple-instagram"
+                            d="M15.068,0c-4.094,0-4.6.019-6.212.09A11.111,11.111,0,0,0,5.2.791a7.379,7.379,0,0,0-2.67,1.738A7.352,7.352,0,0,0,.791,5.2a11.079,11.079,0,0,0-.7,3.658C.015,10.464,0,10.975,0,15.068s.019,4.6.09,6.212a11.118,11.118,0,0,0,.7,3.658,7.39,7.39,0,0,0,1.738,2.67A7.369,7.369,0,0,0,5.2,29.346a11.125,11.125,0,0,0,3.658.7c1.607.075,2.118.09,6.212.09s4.6-.019,6.212-.09a11.151,11.151,0,0,0,3.658-.7,7.7,7.7,0,0,0,4.407-4.407,11.118,11.118,0,0,0,.7-3.658c.075-1.607.09-2.118.09-6.212s-.019-4.6-.09-6.212a11.144,11.144,0,0,0-.7-3.658,7.4,7.4,0,0,0-1.738-2.67A7.342,7.342,0,0,0,24.938.791,11.085,11.085,0,0,0,21.28.09C19.673.015,19.162,0,15.068,0Zm0,2.712c4.022,0,4.5.02,6.09.089a8.3,8.3,0,0,1,2.8.521,4.959,4.959,0,0,1,2.86,2.859,8.32,8.32,0,0,1,.519,2.8c.072,1.59.088,2.067.088,6.09s-.019,4.5-.093,6.09a8.48,8.48,0,0,1-.529,2.8,4.784,4.784,0,0,1-1.129,1.735,4.7,4.7,0,0,1-1.733,1.125,8.381,8.381,0,0,1-2.806.519c-1.6.072-2.071.088-6.1.088s-4.5-.019-6.1-.093A8.544,8.544,0,0,1,6.121,26.8,4.666,4.666,0,0,1,4.39,25.671a4.575,4.575,0,0,1-1.13-1.733,8.551,8.551,0,0,1-.527-2.806c-.057-1.582-.077-2.071-.077-6.083s.02-4.5.077-6.1A8.542,8.542,0,0,1,3.26,6.14,4.467,4.467,0,0,1,4.39,4.406,4.457,4.457,0,0,1,6.121,3.279,8.34,8.34,0,0,1,8.91,2.75c1.6-.057,2.072-.075,6.1-.075l.057.038Zm0,4.618a7.738,7.738,0,1,0,7.738,7.738A7.737,7.737,0,0,0,15.068,7.331Zm0,12.76a5.023,5.023,0,1,1,5.023-5.023A5.021,5.021,0,0,1,15.068,20.091ZM24.92,7.026a1.808,1.808,0,1,1-1.808-1.807A1.809,1.809,0,0,1,24.92,7.026Z"
+                            fill="#f9b03c" />
+                    </svg></a>
             </div>
         </div>
     </footer>

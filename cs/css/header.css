@@ -28,6 +28,13 @@
   display: block;
 }
 
+.header-menu a:hover {
+  background-color: var(--thirdy-color);
+  color: var(--secondary-color);
+  border-radius: 4px;
+  transition: background .25s;
+}
+
 li {
   list-style: none;
 }
